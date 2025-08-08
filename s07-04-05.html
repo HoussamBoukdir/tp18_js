@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #d{
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+            border: 1px solid black;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="stopMovement()">stop</button>
+    <div id="d"></div>
+    <script>
+        let x;
+        let delta=0;
+        function deplacer(){
+            delta+=30;
+            document.getElementById("d").style='left:50px; top:$(delta)px;'
+        }
+    </script>
+    
+</body>
+</html>
